@@ -4,6 +4,7 @@ from django.contrib.auth.models import AbstractBaseUser, BaseUserManager, \
 
 '''pulling over all the funct from base user and customizing them their own'''
 
+
 class UserManager(BaseUserManager):
     def create_user(self, email, password=None, **extra_fields):
         '''creates and saves a new user'''
